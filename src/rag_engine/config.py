@@ -14,6 +14,6 @@ class Settings(BaseSettings):
     retrieval_top_n: int = 20
     rerank_top_k: int = 5
 
-    model_config: SettingsConfigDict(env_file=".env", extra="ignore")
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
 settings = Settings()
